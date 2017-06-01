@@ -1,7 +1,5 @@
 package com.samTest.BDD;
 
-import com.samTest.BDD.MantisSite;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -92,6 +90,6 @@ public class Stepdefs {
 
     @And("^turn off filters$")
     public void turnOffFilters() throws Throwable {
-        MantisSite.mainPage.turnFilterOff();
+        MantisSite.mainPage.turnOffFilters();
     }
 }

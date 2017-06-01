@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import java.util.Map;
-
 /**
  * Created by Олег on 29.05.2017.
  */
@@ -25,7 +23,7 @@ public class MainPage {
     WebElement hideStatusSelector;
 
     @FindBy(xpath = "//input[@name=\"filter\"]")
-    WebElement applyFilterBtn;
+    WebElement ApplyFilterButton;
 
     public void clickCreateButton(){
         CreateButton.click();
@@ -42,9 +40,9 @@ public class MainPage {
                                 && (row.getText().contains(assigned))
                                 && (row.getText().contains("General"))));
     }
-    public void turnFilterOff() {
+    public void turnOffFilters() {
         hideStatusFilter.click();
         new Select(hideStatusSelector).selectByVisibleText("[none]");
-        applyFilterBtn.click();
+        ApplyFilterButton.click();
     }
 }
