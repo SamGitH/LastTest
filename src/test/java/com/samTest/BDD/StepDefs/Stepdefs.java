@@ -1,5 +1,9 @@
-package com.samTest.BDD;
+package com.samTest.BDD.StepDefs;
 
+import com.samTest.BDD.Issue;
+import com.samTest.BDD.Loader;
+import com.samTest.BDD.MantisSite;
+import com.samTest.BDD.User;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

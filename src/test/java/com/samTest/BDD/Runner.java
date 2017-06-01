@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        format = {"json:target/reports/mainReport.json"},
+        format = {"json:target/mainReport.json"},
         features = {"src/test/resources/Features"},
-        glue = {"com.samTest.BDD"} )
+        glue = {"com.samTest.BDD.StepDefs"} )
 
 public class Runner {
 }
