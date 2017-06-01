@@ -39,7 +39,7 @@
             <webdriver.chrome.driver>${driver.path}</webdriver.chrome.driver>
           </systemPropertyVariables>
           <includes>
-            <include>**/CucumberRunner.java</include>
+            <include>**/Runner.java</include>
           </includes>
         </configuration>
       </plugin>
